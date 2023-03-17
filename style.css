@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+html {
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: #dfdbe5;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='32' viewBox='0 0 16 32'%3E%3Cg fill='%239C92AC' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M0 24h4v2H0v-2zm0 4h6v2H0v-2zm0-8h2v2H0v-2zM0 0h4v2H0V0zm0 4h2v2H0V4zm16 20h-6v2h6v-2zm0 4H8v2h8v-2zm0-8h-4v2h4v-2zm0-20h-6v2h6V0zm0 4h-4v2h4V4zm-2 12h2v2h-2v-2zm0-8h2v2h-2V8zM2 8h10v2H2V8zm0 8h10v2H2v-2zm-2-4h14v2H0v-2zm4-8h6v2H4V4zm0 16h6v2H4v-2zM6 0h2v2H6V0zm0 24h2v2H6v-2z'/%3E%3C/g%3E%3C/svg%3E");
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.quote-container {
+  width: auto;
+  max-width: 900px;
+  background-color: rgba(255, 255, 255, 0.684);
+  color: #484848;
+  padding: 1.5rem 2rem;
+  margin: auto 50px;
+  border-radius: 0.7rem;
+  text-align: center;
+  box-shadow: 5px 12px 5px rgba(44, 44, 44, 0.605);
+}
+.ion-quote {
+  font-size: 2rem;
+}
+.quote-text {
+  font-size: 1.5rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-weight: 100;
+  margin-top: 0.7rem;
+}
+.long-quote-text {
+  font-size: 1rem;
+  letter-spacing: 0.8px;
+}
+.author-text {
+  margin-top: 1rem;
+}
+.buttons {
+  margin-top: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+}
+.ion-social-twitter {
+  font-size: 1.5rem;
+}
+.ion-social-twitter:hover {
+  font-size: 1.6rem;
+  color: #00acee;
+}
+.btn {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #555;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 1px 3px 2px rgba(44, 44, 44, 0.562);
+}
+.btn:hover {
+  filter: brightness(120%);
+}
+.btn:active {
+  transform: translate(1px, 3px);
+  box-shadow: none;
+}
+.loader {
+  width: 150px;
+  height: 150px;
+  border: 1rem solid rgba(255, 255, 255, 0.684);
+  border-top: 1rem solid rgba(44, 44, 44, 0.562);
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@media only screen and (max-width: 700px) {
+  .quote-container {
+    margin: auto 30px;
+  }
+  .btn {
+    font-size: 0.8rem;
+  }
+  .ion-social-twitter {
+    font-size: 1rem;
+  }
+}
